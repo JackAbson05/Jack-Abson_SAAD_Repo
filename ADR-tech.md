@@ -1,0 +1,21 @@
+# {ADR-01: Technology Stack Selection}
+
+## Context and Problem Statement
+
+The complaint management system requires a technology stack that supports rapid development of a proof of concept while remaining an industry standard web architecture. The stack must support RESTful API's, role based access controls and data persistent within monolithic design.
+
+## Considered Options
+
+* Node.JS
+* JAVA with springboot
+* Python with Django
+
+## Decision Outcome
+
+Chosen option: Node.JS, because it enables rapid development of a lightweight backend application, supports RESTful API's and aligns with a monolithic architecture design shown in the proof of concept scope
+### Consequences
+
+* Good, because it enables fast development and iteration for the proof of concept
+* Good, because it is widely supported for authentication and database access
+* Bad, because it relies on 3rd party libraries for security compared to heavier frameworks
+
